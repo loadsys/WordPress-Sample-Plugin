@@ -1,2 +1,0 @@
-WordPress-Sample-Plugin
-=======================
