@@ -1,5 +1,5 @@
 === Loadsys Sample Plugin ===
-Contributors: loadsys, jtyost2
+Contributors: loadsys
 Tags: sample
 Requires at least:
 Tested up to:
