@@ -46,7 +46,7 @@ if (!class_exists("LoadsysSimplePlugin")) {
 		 * @return array           modified list of classes
 		 */
 		public function body_class_filter($classes = array()) {
-			$classes[] = 'loadsys-custom-class';
+			$classes[] = 'some-custom-class';
 			return $classes;
 		}
 
@@ -62,13 +62,14 @@ if (!class_exists("LoadsysSimplePlugin")) {
 				// ...etc
 			), $attributes ) );
 
+			return "Simple Shortcode called";
 		}
 
 		/**
 		 * Execute and return data when the enclosed shortcode is executed
 		 * @param  array  $attributes attributes for the shortcode (optional)
-		 * @param  [type] $content    [description]
-		 * @return [type]             [description]
+		 * @param  array  $content    [description]
+		 * @return string             [description]
 		 */
 		public function simple_enclosed_shortcode($attributes = array(), $content) {
 			extract( shortcode_atts( array(
@@ -77,6 +78,7 @@ if (!class_exists("LoadsysSimplePlugin")) {
 				// ...etc
 			), $attributes ) );
 
+			return "Simple Enclosed Shortcode called";
 		}
 
 	}
